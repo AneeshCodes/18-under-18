@@ -1,0 +1,35 @@
+.header{
+  font-size: 35px !important;
+  width: 100% !important;
+  margin-top: 0; 
+}
+
+.note{
+  color: orange;
+  font-size: 20px;
+}
+
+body{
+  background-size: cover;
+}
+
+button{
+  margin-top: 10px;
+  font-size: 20px !important;
+  width: 100px;
+}
+
+.q{
+  margin-top: 50px;
+  width: 500px !important;
+}
+
+.error{
+  color: 	red;
+  font-size: 20px;
+}
+
+.result{
+  color: 	red;
+  font-size: 20px;
+}

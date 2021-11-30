@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>COVID ONLINE TEST</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.4.0/addons/p5.sound.min.js'></script>
+
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body background="homebg.jpg">
+<center>
+  	<h3 class="btn btn-primary header">COVID ONLINE TEST
+	    <br>
+	    <span class="note">Many of us are suffering and dying from the current world pandemic, COVID-19. If we use this website, you can identify if you have contracted this virus. <br>If you want to check if you have been infected, answer the questions below.<br>THIS WEBSITE IS NOT 100% ACCURATE</span>
+  	</h3>
+    
+    <div class="survey">
+      <br>  
+      <br>
+      <div class="btn btn-success q">
+        <h3>1. Do you have a fever or chills?</h3>
+          <input type="radio" name="fever" value="Yes" id="Y1">
+          <label for="Y1">Yes</label>
+          <br>
+          <input type="radio" name="fever" value="No" id="N1">
+          <label for="N1">No</label>
+          <br>
+          <span id="E1" class="error"></span>
+      </div>
+      <br>
+      <div class="btn btn-success q">
+        <h3>2. Do you have a cough?</h3>
+        <input type="radio" name="cough" value="Yes" id="Y2">
+          <label for="Y2">Yes</label>
+          <br>
+          <input type="radio" name="cough" value="No" id="N2">
+          <label for="N2">No</label>
+          <br>
+          <span id="E2" class="error"></span>
+      </div>
+      <br>
+      <div class="btn btn-success q">
+        <h3>3. Do you have body aches</h3>
+        <input type="radio" name="aches" value="Yes" id="Y3">
+          <label for="Y3">Yes</label>
+          <br>
+          <input type="radio" name="aches" value="No" id="N3">
+          <label for="N3">No</label>
+          <br>
+          <span id="E3" class="error"></span>
+      </div>
+      <br>
+      <div class="btn btn-success q">
+        <h3>4. Do you have a headache?</h3>
+        <input type="radio" name="headache" value="Yes" id="Y4">
+          <label for="Y4">Yes</label>
+          <br>
+          <input type="radio" name="headache" value="No" id="N4">
+          <label for="N4">No</label>
+          <br>
+          <span id="E4" class="error"></span>
+      </div>
+      <br>
+      <div class="btn btn-success q">
+        <h3>5. Do you have a new loss of taste or smell</h3>
+        <input type="radio" name="loss" value="Yes" id="Y5">
+          <label for="Y5">Yes</label>
+          <br>
+          <input type="radio" name="loss" value="No" id="N5">
+          <label for="N5">No</label>
+          <br>
+          <span id="E5" class="error"></span>
+      </div>
+      <br>
+      <div class="btn btn-success q">
+        <h3>6. Do you have a sore throat</h3>
+        <input type="radio" name="sore" value="Yes" id="Y6">
+          <label for="Y6">Yes</label>
+          <br>
+          <input type="radio" name="sore" value="No" id="N6">
+          <label for="N6">No</label>
+          <br>
+          <span id="E6" class="error"></span>
+      </div>
+      <br>
+      <div class="btn btn-success q">
+        <h3>7. Do you have congestion or runny nose?</h3>
+        <input type="radio" name="congestion" value="Yes" id="Y7">
+        <label for="Y7">Yes</label>
+        <br>
+        <input type="radio" name="congestion" value="No" id="N7">
+        <label for="N7">No</label>
+        <br>
+        <span id="E7" class="error"></span>
+      </div>
+      <br>
+    </div>
+    <br>
+    <span id="result" class="result"></span>
+    <br>
+    <button onclick="check()">check</button>
+    <br>
+    <br>
+</center>
+
+<script src="main.js"></script>
+</body>
+</html>

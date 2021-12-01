@@ -1,4 +1,4 @@
-score = 1;
+score = 0;
 
 function check()
 {
@@ -121,7 +121,6 @@ function check()
     document.getElementById('E7').innerHTML = ""
   }
 
-
   if((y1 == true || n1 == true) && (y2 == true || n2 == true) && (y3 == true || n3 == true) && (y4 == true || n4 == true) && (y5 == true || n5 == true) && (y6 == true || n6 == true) && (y7 == true || n7 == true))
   {
     if(score <= 2){
@@ -134,4 +133,32 @@ function check()
       document.getElementById('result').innerHTML = "You have risk to COVID-19 DISCLAIMER: This test is not 100% accurate."
     }
   }
+  else{
+    scrollup()
+    document.getElementById('result').innerHTML = ""
+  }
+
+  score = 0
+}
+
+function reset(){
+  scrollup()
+  y1 = false
+  n1 = false
+  y2 = false
+  n2 = false
+  y3 = false
+  n3 = false
+  y4 = false
+  n4 = false
+  y5 = false
+  n5 = false
+  y6 = false
+  n6 = false
+  y7 = false
+  n7 = false
+}
+
+function scrollup(){
+  window.scrollTo(0,0)
 }

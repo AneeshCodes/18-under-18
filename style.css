@@ -16,7 +16,13 @@ body{
 button{
   margin-top: 10px;
   font-size: 20px !important;
-  width: 100px;
+  width: 150px;
+  background-color: #f0ad4e;
+  border-radius: 10px;
+}
+
+.reset{
+  background-color: #5bc0de;
 }
 
 .q{
